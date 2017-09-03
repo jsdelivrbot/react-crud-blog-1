@@ -11,7 +11,7 @@ class PostsIndex extends Component {
 
   renderPosts() {
     // Standard map only iterates over arrays but posts is an object of objects! So we use lodash
-    _.map(this.props.posts, post => {
+    return _.map(this.props.posts, post => {
       return (
         <li key={post.id} className="list-group-item">
           {post.title}
